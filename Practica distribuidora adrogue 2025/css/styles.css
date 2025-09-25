@@ -284,17 +284,28 @@ h2 {
 
 
 
-
-.promociones-contenedor {
-  padding: 2rem 1rem;
-  background: #fafafa;
+/* ==== PROMOCIONES ==== */
+.promociones {
+  text-align: center;
+ 
+  background: linear-gradient(135deg, #f7f4ff, #ece4f7);
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-width: 1100px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.promociones-contenedor h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
-  color: #6a1b9a;
+.promociones h1 {
+  font-size: 2.2rem;
+  color: #5a2d82;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.promociones p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2.5rem;
 }
 
 /* ==== GRID DE PROMOS ==== */
@@ -634,26 +645,67 @@ h2 {
 
 
 
+/* ==== NOSOTROS ==== */
 .nosotros {
-  padding: 3rem 1rem;
-  max-width: 900px;
-  margin: 0 auto;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  padding: 4rem 2rem;
   text-align: center;
+  border-radius: 1.5rem;
+  margin: 3rem auto;
+  max-width: 1100px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  animation: fadeInUp 1s ease-in-out;
 }
 
 .nosotros h1 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
+  color: #5a2d82;
+  margin-bottom: 1.5rem;
   font-weight: 800;
-  color: #6a1b9a;
-  margin-bottom: 1rem;
+  letter-spacing: 1px;
 }
 
 .nosotros p {
-  font-size: 1.05rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
   color: #444;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
 }
+/* Botón */
+.btn-nosotros {
+  display: inline-block;
+  background: linear-gradient(135deg, #7b2ff7, #f107a3);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn-nosotros:hover {
+  background: linear-gradient(135deg, #f107a3, #7b2ff7);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* Animación */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* ==== COMEDORES ==== */
 .comedores {

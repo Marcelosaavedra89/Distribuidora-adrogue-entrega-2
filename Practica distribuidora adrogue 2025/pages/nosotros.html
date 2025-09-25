@@ -16,37 +16,65 @@
 
 <body>
   <!-- Navegación -->
-  <header class="site-header">
-    <nav class="menu-de-navegacion">
-      <a class="letra-menu" href="../index.html">Inicio</a>
-      <a class="letra-menu" href="./promociones.html">Promociones</a>
-      <a class="letra-menu" href="./ofertas.html">Ofertas</a>
-      <a class="letra-menu" href="./productos.html">Productos</a>
-      <a class="letra-menu active" href="#">Nosotros</a>
+  <header class="header">
+  <!-- Logo con enlace al inicio -->
+  <a href="../index.html">
+    <picture>
+      <source srcset="../Imagenes/ChatGPT Image 24 sept 2025, 04_52_58 p.m..png" type="image/png">
+      <img class="logo-principal" src="../Imagenes/ChatGPT Image 24 sept 2025, 04_52_58 p.m..png" alt="Distribuidora Adrogué - Inicio">
+    </picture>
+  </a>
+
+  <!-- Menú de navegación + Carrito -->
+  <div class="menu-carrito">
+    <nav class="menu-de-navegacion" aria-label="Menú principal">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../pages/promociones.html">Promociones</a></li>
+        <li><a href="../pages/ofertas.html">Ofertas</a></li>
+        <li><a href="../pages/productos.html">Productos</a></li>
+        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+      </ul>
     </nav>
 
-    <!-- Radio con música -->
-    <div class="audio-radio">
-      <img src="../Imagenes/musicaudio.jpg" alt="Audiomusica">
-      <audio controls autoplay loop>
-        <source src="https://bendicie-edperaza.radioca.st/stream" type="audio/mpeg">
-        Tu navegador no soporta el audio.
-      </audio>
+    <!-- Carrito -->
+    <div class="carrito">
+      <a href="../pages/carrito.html" class="carrito-link" aria-label="Carrito de compras">
+        <svg class="icono-carrito" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M7 18c-1.1 0-1.99.9-1.99 
+          2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 
+          0c-1.1 0-1.99.9-1.99 
+          2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zM7.16 
+          14.26l.03.01L7.9 16h8.45c.75 0 
+          1.41-.41 1.75-1.03l3.58-6.49a.996.996 
+          0 0 0-.87-1.48H6.21l-.94-2H1v2h3l3.6 
+          7.59-1.35 2.44c-.16.28-.25.61-.25.96 
+          0 1.1.9 2 2 2h12v-2H7.42c-.14 
+          0-.25-.11-.25-.25 0-.04.01-.08.03-.11l1-1.8z"/>
+        </svg>
+        <span id="cart-count">0</span>
+      </a>
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- Contenido principal -->
   <main>
-    <section class="nosotros">
-      <h1>Distribuidora Adrogué</h1>
-      <p>
-        Somos una empresa familiar fundada en 2025. Nacimos con el sueño de ayudar a cada familia a comprar a precios más bajos que los supermercados y 
-        también apoyar a los comerciantes de barrio para que puedan brindar servicios económicos.
-      </p>
-      <p>
-        Parte de nuestras ventas son destinadas a comedores que ayudan a niños necesitados. Si querés colaborar, podés hacerlo donando alimentos, ropa, juguetes o dinero.
-      </p>
-    </section>
+   <section class="nosotros">
+  <div class="nosotros-contenido">
+    <h1> Distribuidora Adrogué</h1>
+    <p>
+      Somos una <strong>empresa familiar</strong> fundada en 2025.  
+      Nacimos con el sueño de ayudar a cada familia a comprar a precios más bajos que los supermercados y 
+      también apoyar a los comerciantes de barrio para que puedan brindar servicios económicos.
+    </p>
+    <p>
+      Parte de nuestras ventas son destinadas a <strong>comedores que ayudan a niños necesitados</strong>.  
+      Si querés colaborar, podés hacerlo donando <em>alimentos, ropa, juguetes o dinero</em>.
+    </p>
+    <a target="_blank" href="https:/www.bancoprovincia.com.ar/home/" class="btn-nosotros">Quiero colaborar ❤️</a>
+  </div>
+</section>
 
     <section class="comedores">
       <h2>Comedor Arielito</h2>
@@ -91,6 +119,17 @@
       </form>
     </section>
   </main>
+   <!-- Imagen + Audio -->
+<div class="audio-radio">
+  <picture>
+    <source srcset="../Imagenes/musicaudio.jpg" type="image/jpg">
+    <img src="../Imagenes/musicaudio.jpg" alt="Escuchá música en vivo desde nuestra radio">
+  </picture>
+  <audio controls autoplay loop>
+    <source src="https://bendicie-edperaza.radioca.st/stream" type="audio/mpeg">
+    Tu navegador no soporta el audio.
+  </audio>
+</div>
 
   <!-- Footer -->
   <footer class="footer">
