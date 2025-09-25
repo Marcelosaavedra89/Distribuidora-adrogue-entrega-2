@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros | Distribuidora Adrogué</title>
+
+  <!-- Tipografía -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <!-- Navegación -->
+  <header class="site-header">
+    <nav class="menu-de-navegacion">
+      <a class="letra-menu" href="../index.html">Inicio</a>
+      <a class="letra-menu" href="promociones.html">Promociones</a>
+      <a class="letra-menu" href="ofertas.html">Ofertas</a>
+      <a class="letra-menu" href="productos.html">Productos</a>
+      <a class="letra-menu active" href="#">Nosotros</a>
+    </nav>
+
+    <!-- Radio con música -->
+    <div class="audio-radio">
+      <img src="../Imagenes/musicaudio.jpg" alt="Audiomusica">
+      <audio controls autoplay loop>
+        <source src="https://bendicie-edperaza.radioca.st/stream" type="audio/mpeg">
+        Tu navegador no soporta el audio.
+      </audio>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <section class="nosotros">
+      <h1>Distribuidora Adrogué</h1>
+      <p>
+        Somos una empresa familiar fundada en 2025. Nacimos con el sueño de ayudar a cada familia a comprar a precios más bajos que los supermercados y 
+        también apoyar a los comerciantes de barrio para que puedan brindar servicios económicos.
+      </p>
+      <p>
+        Parte de nuestras ventas son destinadas a comedores que ayudan a niños necesitados. Si querés colaborar, podés hacerlo donando alimentos, ropa, juguetes o dinero.
+      </p>
+    </section>
+
+    <section class="comedores">
+      <h2>Comedor Arielito</h2>
+      <p><em>
+        Ubicado en Villa Ilasa, a cargo de la Iglesia Cristiana Jesús de Nazareth. Allí los chicos reciben contención, valores, enseñanza del amor y el perdón de Dios.
+      </em></p>
+
+      <div class="galeria-comedor">
+        <img src="../Imagenes/comedor cantando.jpg" alt="Chicos cantando">
+        <img src="../Imagenes/comedor cine.jpg" alt="Chicos viendo cine">
+        <img src="../Imagenes/comedor panchos.jpg" alt="Chicos comiendo panchos">
+        <img src="../Imagenes/comedor comiendo.jpg" alt="Chicos comiendo">
+      </div>
+    </section>
+
+    <section class="ayuda">
+      <h2>¿Cómo ayudar a los chicos?</h2>
+      <p><em>Podés donar alimentos, ropa o juguetes en la dirección Pallares Nº ... (Iglesia Jesús de Nazareth).</em></p>
+      <p><em>También podés colaborar con dinero mediante Banco Provincia.</em></p>
+      <a target="_blank" href="https://www.bancoprovincia.com.ar/home/">Banco Provincia</a>
+    </section>
+
+    <section class="contacto">
+      <h2>Contacto con Distribuidora Adrogué</h2>
+      <p><strong>WhatsApp:</strong> 11-3003-3130</p>
+
+      <h3>Dejanos tu información y nos comunicamos con vos</h3>
+      <form action="/submit_form" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Distribuidora Adrogué. Todos los derechos reservados.</p>
+    <div class="redes">
+      <a target="_blank" href="https://www.facebook.com/" aria-label="Facebook">
+        <img src="../Imagenes/faceboock.jpg" alt="Facebook">
+      </a>
+      <a target="_blank" href="https://www.instagram.com/" aria-label="Instagram">
+        <img src="../Imagenes/instragrams.jpg" alt="Instagram">
+      </a>
+      <a target="_blank" href="https://web.whatsapp.com/" aria-label="WhatsApp">
+        <img src="../Imagenes/whatsapp.jpg" alt="WhatsApp">
+      </a>
+      <a target="_blank" href="https://www.bancoprovincia.com.ar/home/" aria-label="Donaciones">
+        <img src="../Imagenes/donacion.jpg" alt="Donaciones">
+      </a>
+      <a target="_blank" href="https://maps.app.goo.gl/Y1gQCpYkYN2DBfKdA" aria-label="Ubicación">
+        <img src="../Imagenes/mapa.jpg" alt="Mapa ubicación">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
